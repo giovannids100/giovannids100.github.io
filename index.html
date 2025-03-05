@@ -1,83 +1,194 @@
-<!doctype html>
-<html>
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
-    <title>giovannids@100:~$ </title>
-    <meta name="description" content="Giovannids personal website for social and contact">
-    <meta name="author" content="Giovannids">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
-  
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+<!--
+Title: Pixel Portfolio Index HTML File
+Author: Krishnakanth Alagiri (KK)
+Repo: https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite
+Issues: https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite/issues
+Description: This file contains all structure of my portfolio page
+-->
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Giovannids | website
+  </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus velit eget nibh mollis interdum.">
+  <meta name="author" content="Krishnakanth Alagiri">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/effects.css">
+  <link rel="stylesheet" href="assets/css/retro.css">
+</head>
+<body>
+  <section id="top" class="hero">
+    <div id="hero-overlay">
+      <section class="navigation">
+        <header>
+        </header>
+      </section>
+      <span id="to-top">
+        <div class="down-arrow floating-arrow">
+          <a href="#about">
+            <i class="fa fa-chevron-down" aria-hidden="true">
+            </i>
+          </a>
+        </div>
+        <div class="hero-text" id="fadein hero-overlay">
+          <h1>GIOVANNIDS
+          </h1>
+          <h2>Computer Engineer
+          </h2>
+          <br>
+          <a href="https://github.com/giovannids100" class="btn">Github Profile
+          </a>
+        </div>
+        </div>
+      </span>
+  </section>
+  <section id="about">
+    <h2 class="heading">About
+    </h2>
+    <p>I'm Giovanni, a master's student in <strong>Computer Engineering - Cyber Security</strong> at the University of Naples Federico II. I specialize in <strong>cybersecurity, penetration testing, cloud security, and secure programming</strong>. 
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+I also attend the <strong>Cyber Hackademy UNINA</strong>, an advanced ethical hacking academy in collaboration with Accenture, where I focus on <strong>attack and defense techniques, vulnerability analysis, and network security</strong>.
 
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
-  </head>
-  
-  <body>
+Passionate about <strong>AI and cybersecurity</strong>, I work on projects involving <strong>machine learning, threat detection, and network security</strong>, always eager to take on new challenges and innovate in the field.</p>
 
-    <header id="header">
-      <img src="logo.png">
-      <h1>G I O V A N N I - D S</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-      <ul class="main-menu">
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>                 
-    </header>
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              This is a simple website published with Github Pages. <a href="https://github.com/giovannids100">Github Profile</a>
-            </p>
+  </section>
+  <div id="education" class="background-alt">
+    <h2 class="heading">Educational Background
+    </h2>
+    <div id="education-timeline">
+      <div data-date="September 2010 – July 2015">
+        <h3> Computer Engineering Bachelor Degree / Master Degree student
+        </h3>
+        <h4> @ University of Naples Federico II
+        </h4>
+      </div>
+      <div data-date="August 2015 – Aprile 2017">
+        <h3>Hacking Student
+        </h3>
+        <h4> @ Unina Cyber Hackademy powered by Accenture
+        </h4>
+      </div>
+    </div>
+  </div>
+  <div id="projects">
+    <h2 class="heading">Projects
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="assets/img/project.jpg" alt="Lorem ipsum dolor sit" />
           </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Napoli, Italy. </p>
-              <p>Computer Engineering Master student at <a href="http://www.unina.it">Federico II university</a></p>
-              <p>Hacking/Cyber Security student at <a href="https://cyberhackademy.unina.it"> Cyber Hackademy unina </a>
+          <div class="project-info">
+            <h3>Pakisrv Cloud Infrastructure
+            </h3>
+            <p>Cloud infrastructure on Proxmox with VMs, OpenWrt router, and Control Box (Wazuh) for Intrusion detection. VMs have unique SSH keys and Wazuh agents. Router manages VLANs, subnets, and firewall. Control Box detects threats and sends alerts. Admin accesses via tunnel (Twingate), users via SSH with restricted routing. Attacks: (1) Lateral movement via weak SSH, detected by Control Box; (2) DDoS (TCP flood) on the router, mitigated by traffic monitoring and IP blocking.
             </p>
+            <a href="https://ssh-client00.pakisrv.com">View Project
+            </a>
           </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              <a href="https://www.instagram.com/giovannids100/">Instagram</a> </p>
-              <p><a href="mailto:giovannids100@gmail.com">e-mail</a> </p>
-              <p><a href="https://www.linkedin.com/in/giovanni-di-stazio-4a84b92a0/">Linkedin</a>
-            </p>
-          </div>
-          
         </div>
       </div>
     </div>
-
-    <footer>  
-      giovannids@100:~$ website --github-pages
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
-</html>
+  </div>
+  <div id="skills" class="background-alt">
+    <h2 class="heading">Programming Proficiency
+    </h2>
+    <ul>
+      <li>C/C++
+      </li>
+      <li>Java
+      </li>
+      <li>JavaScript
+      </li>
+      <li>CSS
+      </li>
+      <li>Python
+      </li>
+      <li>SQL
+      </li>
+      <li>html
+      </li>
+      <li>VHDL
+      </li>
+    </ul>
+  </div>
+  <div id="skills" class="background-alt">
+    <h2 class="heading">Technological Proficiency
+    </h2>
+    <ul>
+      <li>Cyber Security
+      </li>
+      <li>Hacking
+      </li>
+      <li>Networks
+      </li>
+      <li>Cloud
+      </li>
+      <li>Mathlab
+      </li>
+      <li>Data Analysis
+      </li>
+      <li>Machine Learning
+      </li>
+      <li>Algorithms and Data Structures
+      </li>
+    </ul>
+  </div>
+  <div id="contact-me">
+    <div id="contact-me-overlay">
+      <h2 class="heading">Get in Touch
+      </h2>
+      <div id="contact-me-form">
+        <form method="POST" action="about_blank">
+          <input type="hidden" name="_subject" value="Contact request from personal website" />
+          <input type="email" class="shadow" name="_replyto" placeholder="Your email" required>
+          <textarea name="message" class="shadow" placeholder="Your message go here" required>
+          </textarea>
+          <button class="btn" type="submit">Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    </span>
+  <div class="mobile">
+    <p>
+      Template by Krishnakanth Alagiri (KK)
+      <a href="https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite">
+        <span class="fa fa-heart love">
+          </a>
+        </span>
+    </p>
+    <div class="social-mob">
+      <a href="https://github.com/" target="giovannids100">
+        <img src="assets\img\icons\GitHub.png" alt="Your_Name - GitHub">
+      </a>
+      <a href="https://linkedin.com/" target="giovanni-di-stazio-4a84b92a0">
+        <img src="assets\img\icons\LinkedIn.png" alt="Your_Name - LinkedIn">
+      </a>
+      <a href="https://www.instagram.com/" target="giovannids100">
+        <img src="assets\img\icons\Instagram.png" alt="Your_Name - Instagram">
+      </a>
+      <a href="mailto:yourmail@gmail.com" target="giovannids100@gmail.com">
+        <img src="assets\img\icons\Mail.png" alt="Your_Name - Mail">
+        </div>
+    </div>
+    <span id="to-top">
+      <div class="up-arrow floating-arrow">
+        <a href="#top">
+          <i class="fa fa-chevron-up" aria-hidden="true">
+          </i>
+        </a>
+      </div>
+      </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    </body>
+  </html>
