@@ -191,44 +191,44 @@ padding-right: 11em;
 font-size: 1.3em;
 }
 /* education Section */
-#education {
+#education, #experience {
 padding: 50px 15px;
 text-align: center;
 border-bottom: 1px solid #e4e4e4;
 }
-#education h2 {
+#education h2, #experience h2 {
 color: #374054;
 }
-#education-timeline {
+#education-timeline, #experience-timeline {
 margin: 30px auto 0 auto;
 position: relative;
 max-width: 1000px;
 }
-#education-timeline div {
+#education-timeline div, #experience-timeline div {
 background: #fff;
 padding: 10px;
 margin-bottom: 10px;
 border: 3px solid #c2c2c2
 }
-#education-timeline h3 {
+#education-timeline h3, #experience-timeline h3 {
 font-size: 1.5em;
 font-weight: 300;
 color: #374054;
 display: inline-block;
 margin: 0;
 }
-#education-timeline h4 {
+#education-timeline h4, #experience-timeline h4 {
 font-size: 1.2em;
 font-weight: 300;
 color: #7e8890;
 margin: 0 0 15px 0;
 }
-#education-timeline p {
+#education-timeline p, #experience-timeline p {
 color: #74808a;
 font-size: 0.9em;
 margin: 0;
 }
-#education-timeline:before,#education-timeline:after {
+#education-timeline:before,#education-timeline:after,#experience-timeline:before,#experience-timeline:after {
 content: none;
 }
 /* x(xtra)education Section */
