@@ -1,1 +1,1 @@
-Small personal website http://giovannids.me
+Small personal website
