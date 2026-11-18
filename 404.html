@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>404 | Game Over</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0b0a">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/nightcity.css">
+  <style>
+    .hero-text { top: 42%; }
+    .game-over { margin: 22px 0 34px 0; font-size: 22px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="scene" aria-hidden="true">
+      <img class="layer" src="/assets/img/scene/sky.svg" alt="">
+      <img class="layer" src="/assets/img/scene/far.svg" alt="">
+      <div class="cars">
+        <span class="car car-1"></span>
+        <span class="car car-2"></span>
+      </div>
+      <img class="layer" src="/assets/img/scene/mid.svg" alt="">
+      <img class="layer" src="/assets/img/scene/near.svg" alt="">
+      <div class="rain"></div>
+    </div>
+    <div class="hero-text">
+      <div class="prompt">
+        <span class="prompt-line">&#9484;&#9472;&#9472;(<span class="prompt-user">giovannids&#12927;nightcity</span>)-[<span class="prompt-dir">~</span>]</span>
+        <span class="prompt-line">&#9492;&#9472;<span class="prompt-sym">$</span> <span class="prompt-cmd">cd <span id="missing-path">this-page</span></span></span>
+        <span class="prompt-line prompt-error">bash: cd: No such file or directory</span>
+      </div>
+      <h1 class="neon" data-text="GAME OVER">GAME OVER</h1>
+      <p class="game-over">This page got lost somewhere in the city.<br>Continue?</p>
+      <div class="hero-actions">
+        <a href="/" class="btn btn-primary">&#9654; Yes, back home</a>
+      </div>
+    </div>
+  </section>
+  <div class="crt" aria-hidden="true"></div>
+  <script>
+    var path = decodeURIComponent(location.pathname).replace(/^\//, "") || "this-page";
+    document.getElementById("missing-path").textContent = path.length > 40 ? path.slice(0, 39) + "\u2026" : path;
+  </script>
+</body>
+</html>

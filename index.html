@@ -1,289 +1,263 @@
 <!--
-Title: Pixel Portfolio Index HTML File
-Author: Krishnakanth Alagiri (KK)
-Repo: https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite
-Issues: https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite/issues
-Description: This file contains all structure of my portfolio page
+Title: Giovannids - Night City Portfolio
+Description: Personal portfolio, pixel-art night city edition.
+Originally based on Pixel Portfolio by Krishnakanth Alagiri (KK): https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite
 -->
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Giovannids | website
-  </title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Personal portfolio website.">
-  <meta name="author" content="Krishnakanth Alagiri, Giovanni Di Stazio">
+  <title>Giovannids | Cyber Security</title>
+  <meta name="description" content="Giovanni - Security Transformation Analyst at Accenture Technology and Computer Engineering (Cyber Security) student at the University of Naples Federico II.">
+  <meta name="author" content="Giovannids">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <meta name="theme-color" content="#0d0b0a">
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/effects.css">
-  <link rel="stylesheet" href="assets/css/retro.css">
+  <link rel="stylesheet" href="assets/css/nightcity.css">
 </head>
 <body>
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- HUD navigation -->
+  <header class="hud" id="hud">
+    <a href="#top" class="hud-logo"><span class="hud-logo-mark">G</span>GIOVANNIDS</a>
+    <button class="hud-toggle" id="hud-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="hud-menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="hud-menu" id="hud-menu">
+      <a href="#about">About</a>
+      <a href="#experience">Work</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact-me">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero: night city -->
   <section id="top" class="hero">
-    <div id="hero-overlay">
-      <section class="navigation">
-        <header>
-        </header>
-      </section>
-      <span id="to-top">
-        <div class="down-arrow floating-arrow">
-          <a href="#about">
-            <i class="fa fa-chevron-down" aria-hidden="true">
-            </i>
-          </a>
-        </div>
-        <div class="hero-text" id="fadein hero-overlay">
-          <h1>GIOVANNIDS
-          </h1>
-          <h2>Security Engineer
-          </h2>
-          <br>
-          <a href="https://github.com/giovannids100" class="btn">Github Profile
-          </a>
-        </div>
-        </div>
-      </span>
+    <div class="scene" aria-hidden="true">
+      <img class="layer" data-depth="0.05" src="assets/img/scene/sky.svg" alt="">
+      <img class="layer" data-depth="0.15" src="assets/img/scene/far.svg" alt="">
+      <div class="cars">
+        <span class="car car-1"></span>
+        <span class="car car-2"></span>
+        <span class="car car-3"></span>
+      </div>
+      <img class="layer" data-depth="0.3" src="assets/img/scene/mid.svg" alt="">
+      <img class="layer" data-depth="0.45" src="assets/img/scene/near.svg" alt="">
+      <div class="rain"></div>
+    </div>
+    <div class="hero-text">
+      <div class="prompt">
+        <span class="prompt-line">&#9484;&#9472;&#9472;(<span class="prompt-user">giovannids&#12927;nightcity</span>)-[<span class="prompt-dir">~</span>]</span>
+        <span class="prompt-line">&#9492;&#9472;<span class="prompt-sym">$</span> <span class="prompt-cmd" id="cmd">whoami</span><span class="prompt-cursor"></span></span>
+      </div>
+      <h1 class="neon" data-text="GIOVANNIDS">GIOVANNIDS</h1>
+      <p class="hero-role"><span id="typed">Security Transformation Analyst</span><span class="caret">_</span></p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary">&#9654; Press Start</a>
+        <a href="https://github.com/giovannids100" target="_blank" rel="noopener" class="btn"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll to about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
   </section>
-  <section id="about">
-    <h2 class="heading">About
-    </h2>
-    <p>I'm Giovanni, a <strong>Security Transformation Analyst at Accenture Technology</strong> and a master's student in <strong>Computer Engineering - Cyber Security</strong> at the University of Naples Federico II. I specialize in <strong>cybersecurity, penetration testing, cloud security, and secure programming</strong>. 
 
-I also attend the <strong>Cyber Hackademy UNINA</strong>, an advanced ethical hacking academy in collaboration with Accenture, where I focus on <strong>attack and defense techniques, vulnerability analysis, and network security</strong>.
+  <main>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <span class="section-no">~/about</span>
+        <h2 class="heading">About</h2>
+      </div>
+      <div class="about-grid reveal">
+        <aside class="panel player-card">
+          <div class="panel-title">Profile</div>
+          <dl class="stats">
+            <div><dt>Name</dt><dd>Giovanni</dd></div>
+            <div><dt>Class</dt><dd>Security Transformation Analyst</dd></div>
+            <div><dt>Guild</dt><dd>Accenture Technology</dd></div>
+            <div><dt>Quest</dt><dd>MSc Computer Engineering &ndash; Cyber Security</dd></div>
+            <div><dt>Academy</dt><dd>Cyber Hackademy UNINA</dd></div>
+          </dl>
+          <div class="perks">
+            <span>Network Security</span>
+            <span>Infrastructure Engineering</span>
+            <span>Penetration Testing</span>
+            <span>AI &amp; ML</span>
+          </div>
+        </aside>
+        <div class="panel about-text">
+          <div class="panel-title">Bio.txt</div>
+          <p>I'm Giovanni, a <strong>Security Transformation Analyst at Accenture Technology</strong> and a master's student in <strong>Computer Engineering - Cyber Security</strong> at the University of Naples Federico II. I specialize in <strong>cybersecurity, network security, Infrastructure Engineering, and Data Protection</strong>.</p>
+          <p>I also attend the <strong>Cyber Hackademy UNINA</strong>, an advanced ethical hacking academy in collaboration with Accenture, where I focus on <strong>attack and defense techniques, network and data security</strong>.</p>
+          <p>Passionate about <strong>AI and cybersecurity</strong>, I work on projects involving <strong>security architecture, threat detection, and network security</strong>, always eager to take on new challenges and innovate in the field.</p>
+        </div>
+      </div>
+    </section>
 
-Passionate about <strong>AI and cybersecurity</strong>, I work on projects involving <strong>machine learning, threat detection, and network security</strong>, always eager to take on new challenges and innovate in the field.</p>
+    <!-- Work experience -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <span class="section-no">~/experience</span>
+        <h2 class="heading">Work Experience</h2>
+      </div>
+      <ol class="quest-log">
+        <li class="quest reveal">
+          <span class="quest-status status-active">Active</span>
+          <h3>Security Transformation Analyst</h3>
+          <h4><a href="https://www.accenture.com/" target="_blank" rel="noopener">@ Accenture Technology</a></h4>
+          <p class="quest-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> January 2026 &ndash; Present</p>
+        </li>
+      </ol>
+    </section>
 
-  </section>
-  <div id="experience">
-    <h2 class="heading">Work Experience
-    </h2>
-    <div id="experience-timeline">
-      <div data-date="January 2026 – Present">
-        <h3> Security Transformation Analyst
-        </h3>
-          <h4> <a href="https://www.accenture.com/">@ Accenture Technology </a>
-          </h4>
-          <p>January 2026 – Present
-          </p>
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="section-head">
+        <span class="section-no">~/education</span>
+        <h2 class="heading">Educational Background</h2>
       </div>
-    </div>
-  </div>
-  <div id="education" class="background-alt">
-    <h2 class="heading">Educational Background
-    </h2>
-    <div id="education-timeline">
-      <div data-date="September 2010 – July 2015">
-        <h3> Computer Engineering Bachelor Degree / Master Degree student
-        </h3>
-          <h4> <a href="https://www.ingegneria-informatica.unina.it/index.php/it/">@ University of Naples Federico II </a>
-          </h4>
-      </div>
-      <div data-date="August 2015 – Aprile 2017">
-        <h3> Hacking Graduate
-        </h3>
-          <h4> <a href="https://cyberhackademy.unina.it/"> @ Unina Cyber Hackademy powered by Accenture </a>
-          </h4>
-      </div>
-    </div>
-  </div>
-  <div id="projects">
-    <h2 class="heading">Projects
-    </h2>
-    <div class="container">
-      <div class="row">
-        <div class="project shadow-large">
-          <div class="project-image">
-            <img src="assets/img/project5.png" alt="Penguin Inc. - Open Network Academy" />
-          </div>
-          <div class="project-info">
-            <h3>Penguin Inc. - Open Network Academy
-            </h3>
-            <p>Presented for "The Big Hack 2026" (challenge C4 Consorzio Clara) with team Los Penguinos. A serious game about networking and cyber security played on a real network built with Mininet: each device is a Linux namespace, so pings, routes and firewall rules are real. Players configure routers and switches through a CLI (interfaces, static routes, ACLs, OSPF), trace packets to see which ACL drops them, and defend the network from brute force, DDoS and reverse shell attacks. Built with Python (Starlette), nftables, dnsmasq and vanilla JS, deployed with Docker Compose.
-            </p>
-            <a href="https://github.com/giovannids100/Penguin-Inc.---Open-Network-Academy" class="btn">View Project
-            </a>
-          </div>
-        </div>
-        <div class="project shadow-large">
-          <div class="project-image">
-            <img src="assets/img/project3.png" alt="Lorem ipsum dolor sit" />
-          </div>
-          <div class="project-info">
-            <h3>Quantun Compression Simulator
-            </h3>
-            <p>Presented for "The Big Hack 2025 - Special Edition".A quantum computing-based video compression tool that uses amplitude encoding and quantum circuits to compress and reconstruct video files. This project leverages PennyLane quantum framework to demonstrate quantum information processing on multimedia.
-            </p>
-            <a href="https://github.com/giovannids100/The-Big-Hack-2025-Quantum-Compression-Simulator" class="btn">View Project
-            </a>
-          </div>
-        </div>
-        <div class="project shadow-large">
-          <div class="project-image">
-            <img src="assets/img/project4.png" alt="Lorem ipsum dolor sit" />
-          </div>
-          <div class="project-info">
-            <h3>IOP - Internet of Plants
-            </h3>
-            <p>An IoT-based project for monitoring key plant health metrics (e.g., soil humidity) through connected sensors and a web dashboard. Data collected by the STM32F3 Discovery and ESP32 boards are recived from FastAPI and sent to a Streamlit interface for real-time visualization. Docker deployment Included.
+      <ol class="quest-log">
+        <li class="quest reveal">
+          <span class="quest-status status-progress">In progress</span>
+          <h3>Computer Engineering Bachelor Degree / Master Degree student</h3>
+          <h4><a href="https://www.ingegneria-informatica.unina.it/index.php/it/" target="_blank" rel="noopener">@ University of Naples Federico II</a></h4>
+        </li>
+        <li class="quest reveal">
+          <span class="quest-status status-done">Completed</span>
+          <h3>Hacking Graduate</h3>
+          <h4><a href="https://cyberhackademy.unina.it/" target="_blank" rel="noopener">@ Unina Cyber Hackademy powered by Accenture</a></h4>
+        </li>
+      </ol>
+    </section>
 
-            </p>
-            <a href="https://github.com/giovannids100/IoP---Internet-of-Plants" class="btn">View Project
-            </a>
-          </div>
-        </div>
-        <div class="project shadow-large">
-          <div class="project-image">
-            <img src="assets/img/project.jpg" alt="Lorem ipsum dolor sit" />
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <span class="section-no">~/projects</span>
+        <h2 class="heading">Projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project reveal">
+          <div class="project-screen">
+            <img src="assets/img/project5.png" alt="Penguin Inc. - Open Network Academy title screen" loading="lazy">
+            <span class="project-badge">The Big Hack 2026</span>
           </div>
           <div class="project-info">
-            <h3>NS Cloud Infrastructure with IDS
-            </h3>
-            <p>Cloud infrastructure on Proxmox with VMs, OpenWrt router, and SIEM/SOAR Control Box (Wazuh + Suricata) for Intrusion detection. VMs have unique SSH keys and Wazuh agents. Router manages VLANs, subnets, and firewall. Control Box detects threats and sends alerts via e-mail. Admin accesses via tunnel (Twingate), users via SSH on browser with restricted routing. Also a reported cyber attack simulation for testing the alerts.
-            </p>
-            <a href="https://github.com/giovannids100/NS-cloud-infrastructure-with-IDS" class="btn">View Project
-            </a>
+            <h3>Penguin Inc. - Open Network Academy</h3>
+            <p>Presented for "The Big Hack 2026" (challenge C4 Consorzio Clara) with team Los Penguinos. A serious game about networking and cyber security played on a real network built with Mininet: each device is a Linux namespace, so pings, routes and firewall rules are real. Players configure routers and switches through a CLI (interfaces, static routes, ACLs, OSPF), trace packets to see which ACL drops them, and defend the network from brute force, DDoS and reverse shell attacks. Built with Python (Starlette), nftables, dnsmasq and vanilla JS, deployed with Docker Compose.</p>
+            <ul class="tags"><li>Mininet</li><li>Python</li><li>nftables</li><li>Docker</li></ul>
+            <a href="https://github.com/giovannids100/Penguin-Inc.---Open-Network-Academy" target="_blank" rel="noopener" class="btn">View Project</a>
           </div>
-        </div>
-      </div>
-        <div class="project shadow-large">
-          <div class="project-image">
-            <img src="assets/img/project2.png" alt="Lorem ipsum dolor sit" />
+        </article>
+        <article class="project reveal">
+          <div class="project-screen">
+            <img src="assets/img/project3.png" alt="Quantum Compression Simulator logo" loading="lazy">
+            <span class="project-badge">The Big Hack 2025</span>
           </div>
           <div class="project-info">
-            <h3>SPID Access to web services: Protocols And Test-Suite
-            </h3>
-            <p>Project made for Bachelor thesis. Research and Test Implementation of Access Authentication using SPID as Identity Provider. In depth description of the protocols used for Authentication and simple guide to implementation of a test suite for Service Providers.
-            </p>
-            <a href="https://github.com/giovannids100/SPID-web-test-suite" class="btn">View Project
-            </a>
+            <h3>Quantum Compression Simulator</h3>
+            <p>Presented for "The Big Hack 2025 - Special Edition". A quantum computing-based video compression tool that uses amplitude encoding and quantum circuits to compress and reconstruct video files. This project leverages PennyLane quantum framework to demonstrate quantum information processing on multimedia.</p>
+            <ul class="tags"><li>Quantum</li><li>PennyLane</li><li>Python</li></ul>
+            <a href="https://github.com/giovannids100/The-Big-Hack-2025-Quantum-Compression-Simulator" target="_blank" rel="noopener" class="btn">View Project</a>
           </div>
+        </article>
+        <article class="project reveal">
+          <div class="project-screen">
+            <img src="assets/img/project4.png" alt="Internet of Plants logo" loading="lazy">
+            <span class="project-badge">IoT</span>
+          </div>
+          <div class="project-info">
+            <h3>IOP - Internet of Plants</h3>
+            <p>An IoT-based project for monitoring key plant health metrics (e.g., soil humidity) through connected sensors and a web dashboard. Data collected by the STM32F3 Discovery and ESP32 boards are received by FastAPI and sent to a Streamlit interface for real-time visualization. Docker deployment included.</p>
+            <ul class="tags"><li>STM32</li><li>ESP32</li><li>FastAPI</li><li>Streamlit</li></ul>
+            <a href="https://github.com/giovannids100/IoP---Internet-of-Plants" target="_blank" rel="noopener" class="btn">View Project</a>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="project-screen">
+            <img src="assets/img/project.jpg" alt="Proxmox, Wazuh and SSH infrastructure illustration" loading="lazy">
+            <span class="project-badge">Network Security</span>
+          </div>
+          <div class="project-info">
+            <h3>NS Cloud Infrastructure with IDS</h3>
+            <p>Cloud infrastructure on Proxmox with VMs, OpenWrt router, and SIEM/SOAR Control Box (Wazuh + Suricata) for intrusion detection. VMs have unique SSH keys and Wazuh agents. Router manages VLANs, subnets, and firewall. Control Box detects threats and sends alerts via e-mail. Admin accesses via tunnel (Twingate), users via SSH on browser with restricted routing. Also a reported cyber attack simulation for testing the alerts.</p>
+            <ul class="tags"><li>Proxmox</li><li>OpenWrt</li><li>Wazuh</li><li>Suricata</li></ul>
+            <a href="https://github.com/giovannids100/NS-cloud-infrastructure-with-IDS" target="_blank" rel="noopener" class="btn">View Project</a>
+          </div>
+        </article>
+        <article class="project reveal">
+          <div class="project-screen">
+            <img src="assets/img/project2.png" alt="SPID assertion consumer validator logo" loading="lazy">
+            <span class="project-badge">Bachelor Thesis</span>
+          </div>
+          <div class="project-info">
+            <h3>SPID Access to web services: Protocols And Test-Suite</h3>
+            <p>Project made for Bachelor thesis. Research and Test Implementation of Access Authentication using SPID as Identity Provider. In depth description of the protocols used for Authentication and simple guide to implementation of a test suite for Service Providers.</p>
+            <ul class="tags"><li>SPID</li><li>Authentication</li><li>Testing</li></ul>
+            <a href="https://github.com/giovannids100/SPID-web-test-suite" target="_blank" rel="noopener" class="btn">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <span class="section-no">~/skills</span>
+        <h2 class="heading">Inventory</h2>
+      </div>
+      <div class="inventory-grid">
+        <div class="panel inventory reveal">
+          <div class="panel-title">Programming Proficiency</div>
+          <ul class="slots">
+            <li>Bash</li><li>Metasploit</li><li>C/C++</li><li>Java</li><li>Docker-compose</li><li>DOCKERFILE</li><li>Streamlit</li><li>Plotly</li><li>JavaScript</li><li>Assembly</li><li>CSS</li><li>Python</li><li>Django</li><li>SQL</li><li>HTML</li><li>VHDL</li>
+          </ul>
+        </div>
+        <div class="panel inventory reveal">
+          <div class="panel-title">Technological Proficiency</div>
+          <ul class="slots">
+            <li>Cyber Security</li><li>Network Infrastructure</li><li>Security Platforms</li><li>Hacking</li><li>Linux</li><li>Quantum Information</li><li>SIEM/SOAR</li><li>Docker</li><li>Networks</li><li>Cloud</li><li>Matlab</li><li>Data Analysis</li><li>Machine Learning</li><li>Algorithms and Data Structures</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-  <div id="skills" class="background-alt">
-    <h2 class="heading">Programming Proficiency
-    </h2>
-    <ul>
-      <li>Bash
-      </li>
-      <li>Metasploit
-      </li>
-      <li>C/C++
-      </li>
-      <li>Java
-      </li>
-      <li>Docker-compose
-      </li>
-      <li>DOCKERFILE
-      </li>
-      <li>Streamlit
-      </li>
-      <li>Plotly
-      </li>
-      <li>JavaScript
-      </li>
-      <li>Assembly
-      </li>
-      <li>CSS
-      </li>
-      <li>Python
-      </li>
-      <li>Django
-      </li>
-      <li>SQL
-      </li>
-      <li>html
-      </li>
-      <li>VHDL
-      </li>
-    </ul>
-  </div>
-  <div id="skills" class="background-alt">
-    <h2 class="heading">Technological Proficiency
-    </h2>
-    <ul>
-      <li>Cyber Security
-      </li>
-      <li>Hacking
-      </li>
-      <li>Linux
-      </li>
-      <li>Quantum Information
-      </li>
-      <li>SIEM/SOAR
-      </li>
-      <li>Docker
-      </li>
-      <li>Networks
-      </li>
-      <li>Cloud
-      </li>
-      <li>Matlab
-      </li>
-      <li>Data Analysis
-      </li>
-      <li>Machine Learning
-      </li>
-      <li>Algorithms and Data Structures
-      </li>
-    </ul>
-  </div>
-  <div id="contact-me">
-    <div id="contact-me-overlay">
-      <h2 class="heading">Get in Touch
-      </h2>
-      <div class="contact-box">
-        <p class="contact-text">&gt; Want to talk about cyber security, projects or opportunities?<br>Send me a message, I'll get back to you!
-        </p>
-        <div class="contact-links">
-          <a href="mailto:giovannids100@gmail.com" class="btn"><i class="fa fa-envelope" aria-hidden="true"></i> Email
-          </a>
-          <a href="https://www.linkedin.com/in/giovanni-di-stazio-4a84b92a0" target="_blank" rel="noopener" class="btn"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
-          </a>
-          <a href="https://github.com/giovannids100" target="_blank" rel="noopener" class="btn"><i class="fa fa-github" aria-hidden="true"></i> GitHub
-          </a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-me" class="contact">
+      <div class="section-head">
+        <span class="section-no">~/contact</span>
+        <h2 class="heading">Get in Touch</h2>
+      </div>
+      <div class="dialog reveal">
+        <p class="dialog-speaker">GIOVANNI</p>
+        <p class="dialog-text">&gt; Want to talk about cyber security, projects or opportunities?<br>Send me a message, I'll get back to you!</p>
+        <div class="dialog-actions">
+          <a href="mailto:giovannids100@gmail.com" class="btn btn-primary"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
+          <a href="https://www.linkedin.com/in/giovanni-di-stazio-4a84b92a0" target="_blank" rel="noopener" class="btn"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+          <a href="https://github.com/giovannids100" target="_blank" rel="noopener" class="btn"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
         </div>
+        <span class="dialog-next" aria-hidden="true">&#9660;</span>
       </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="socials">
+      <a href="https://github.com/giovannids100" target="_blank" rel="noopener" aria-label="GitHub"><img src="assets/img/icons/GitHub.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/giovanni-di-stazio-4a84b92a0" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/img/icons/LinkedIn.png" alt=""></a>
+      <a href="https://www.instagram.com/giovannids100" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/img/icons/Instagram.png" alt=""></a>
+      <a href="mailto:giovannids100@gmail.com" aria-label="Email"><img src="assets/img/icons/Mail.png" alt=""></a>
     </div>
-  </div>
-  <footer>
-    </span>
-  <div class="mobile">
-    <p>
-      Template by Krishnakanth Alagiri (KK)
-      <a href="https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite">
-        <span class="fa fa-heart love">
-          </a>
-        </span>
-    </p>
-    <div class="social-mob">
-      <a href="https://github.com/giovannids100" target="_blank" rel="noopener">
-        <img src="assets/img/icons/GitHub.png" alt="Giovanni - GitHub">
-      </a>
-      <a href="https://www.linkedin.com/in/giovanni-di-stazio-4a84b92a0" target="_blank" rel="noopener">
-        <img src="assets/img/icons/LinkedIn.png" alt="Giovanni - LinkedIn">
-      </a>
-      <a href="https://www.instagram.com/giovannids100" target="_blank" rel="noopener">
-        <img src="assets/img/icons/Instagram.png" alt="Giovanni - Instagram">
-      </a>
-      <a href="mailto:giovannids100@gmail.com">
-        <img src="assets/img/icons/Mail.png" alt="Giovanni - Mail">
-      </a>
-    </div>
-    </div>
-    <span id="to-top">
-      <div class="up-arrow floating-arrow">
-        <a href="#top">
-          <i class="fa fa-chevron-up" aria-hidden="true">
-          </i>
-        </a>
-      </div>
-      </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-    </script>
-    </body>
-  </html>
+    <p class="credits">&copy; <span id="year">2026</span> Giovannids &middot; Based on a template by <a href="https://github.com/KrishnaAlagiri/Pixel-Portfolio-Webite" target="_blank" rel="noopener">Krishnakanth Alagiri</a></p>
+    <a href="#top" class="to-top" aria-label="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+  </footer>
+
+  <div class="crt" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/nightcity.js"></script>
+</body>
+</html>
